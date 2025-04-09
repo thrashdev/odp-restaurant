@@ -1,3 +1,10 @@
 "use strict";
-const x = document.getElementById("content");
-x.innerHTML = "<h1>Hello world!</h1>";
+import "./styles.css";
+import steakImage from '../assets/pan-grilled-steak.webp';
+
+const steak = document.createElement("img");
+steak.src = steakImage;
+
+const header = document.getElementById("header");
+header.prepend(steak);
+
